@@ -9,6 +9,6 @@
   "author": "Pasi Hirvonen <pasi.hirvonen@octo3.fi",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.16.2"
+    "axios": "^0.18.0"
   }
 }
