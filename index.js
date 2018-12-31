@@ -22,7 +22,7 @@ function getPosts() {
 
 function getCommentsForPost(postId) {
   return axios
-    .get("https://jsonplaceholder.typicode.com/posts/" + postId + "/comments")
+    .get("https://jsonplaceholder.typicode.com/comments?postId=" + postId)
     .then(function(response) {
       return response.data;
     });
