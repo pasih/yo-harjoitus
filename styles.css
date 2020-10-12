@@ -6,7 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #d6d6d6;
+  background: #f2f2f2;
+  padding: 15px;
 }
 
 code {
@@ -18,20 +19,28 @@ code {
   display: flex;
   align-items: stretch;
   padding: 30px;
+  background: #d6d6d6;
+  border-radius: 10px;
 }
 
 .post-list {
-  width: 30%;
   border-right: 1px solid #b5b5b5;
   padding: 20px;
-  flex: 1 1 30%;
+  flex: 1 1 35%;
 }
 
 .post-list ul {
   overflow: scroll;
-  max-height: calc(100vh - 250px);
+  max-height: calc(100vh - 180px);
   list-style-type: none;
   padding-left: 0;
+}
+
+.post-list ul li button {
+  border: 0;
+  background: transparent;
+  color: black;
+  text-align: left;
 }
 
 .post-list input {
@@ -54,11 +63,17 @@ code {
 }
 
 .post-list button:hover {
-  background: #414187;
+  background: white;
 }
 
 .post-list button:active {
   background: #3d8ddd;
+}
+
+.post-list button:focus {
+  background: #3d8ddd;
+  border: 2px solid #3d8ddd;
+  outline: 0;
 }
 
 .post-list-item {
@@ -66,6 +81,8 @@ code {
   cursor: pointer;
   border-left: 5px solid #9c9c9c;
   padding-left: 10px;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .post-list-item:hover {
@@ -107,4 +124,3 @@ code {
 .close-button:hover {
   background: #ccc;
 }
-
